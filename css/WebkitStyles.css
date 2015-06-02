@@ -1,0 +1,112 @@
+/*========================================
+	Main Content Library Tabs								
+=========================================*/
+
+
+/** WIDTHS **/
+.libraryTabs.width673 .navTabHolder { width: 673px;}
+
+
+/*========================================
+	Buttons							
+=========================================*/
+.button .buttonText { display: inline-block; float:left}
+
+
+/*========================================
+	Overlay	
+==========================================*/
+.downloadDocument .language > a .arrow { display: inline-block;height: 10px;padding-left: 0;}
+/*.overlay.toolOverlayWrapper .overlayContent { height: 602px;}
+.downloadDocument { position: relative;height: 595px;}*/
+.overlay.binderOptions.width910 .overlayContent .overlayBinder { margin-top: 0px;}
+.downloadDocument .linksPanel .links .linkList .links, 
+.downloadDocument .publisher { top: -6px;}
+
+/*========================================
+	Add Item
+==========================================*/
+.widePanel .itemTypeList .itemTypes > a .arrow { display: inline-block;height: 10px;padding-left: 0;padding-bottom: 4px;}
+.narrowPanel .ui-datepicker-trigger img { margin-left: 0; margin-top: 0;}
+.widePanel .fileUpload ul li .fileUploadLabel{display:inline-block; font-size:14px; margin-right:15px;vertical-align: middle; line-height: 26px;height: 26px; margin-top: -20px;}
+.widePanel.itemTypeUpload.video .videoTypeContainer.local {/*margin-top:-3px*/}
+
+
+/*========================================
+	Binder
+==========================================*/
+.mainWorkAreaWide.binder.files table.bos-ui-listing th.selector { border-right: 1px solid #e4e4e4 !important; width: 38px; border-left: 1px solid #e4e4e4 !important; background-position:0px 1px !important; }
+table.bos-ui-listing th.selector .ui-th-wrapper { /*border-right: 1px solid #fff;*/border-right: 0 none}
+
+/*table.bos-ui-listing .binderTable th.selector { border: 10px solid red;}*/
+
+table.binderTable.myBinders th.editState { border-left: 1px solid #e4e4e4;}
+table.bos-ui-listing th.editState span.ui-th-wrapper { border-left: 1px solid #f4f4f4;}
+
+
+.details .text { display: block; float: left;}
+
+/* Custom CheckBox */
+.overlayBinder.addToBinder.newBinder .sharedBox label, .overlayBinder.addToBinder.step2 .sharedBox label, .overlayBinder.editBinder .sharedBox label, .overlayBinder.copyBinder .sharedBox label {  padding-top: 2px;}
+
+
+/*========================================
+	Search Results							
+=========================================*/
+
+.content.search .appliedFilters .header .button .content { display: inline-block; float:left}
+
+.followOptionsPopoutBox div.bos-ui-popoutbox-content-container { margin-top: 1px;}
+.content.search .promoList.filterSelection .content ul.core-treeView-container > li {width: 220px;}
+
+.showFilterPopout div.bos-ui-popoutbox-content { padding: 19px 20px 31px;}
+.showFilterPopout div.bos-ui-popoutbox-content select { padding: 2px;}
+.showFilterPopout div.bos-ui-popoutbox-content .rightSection ul li ul { padding-top: 6px;}
+
+.downloadDocument .content { padding: 19px 22px 7px;}
+
+/*========================================
+	Header							
+=========================================*/
+.iPhoneCheckContainer {
+    top: 8px;
+}
+
+/*========================================
+	Search Bar	
+==========================================*/
+.searchBar.resize .search {
+    position: relative;
+	min-height: 42px;
+}
+.searchBar.resize .search input[type="submit"],
+.searchBar.resize .search input[type="button"] {
+    position: absolute;
+    top: 1px;
+    margin-left: 1px;
+	height: 40px;
+	background: url("/images/FieldPortal/search/header/button_go_46.png") no-repeat scroll 0 -2px transparent;
+}
+
+table#ctl00_ctl00_ContentPlaceHolderPageFrame_ContentPlaceHolderMain_rblUsers label { margin-left: 5px;}
+input#ctl00_ctl00_ContentPlaceHolderPageFrame_ContentPlaceHolderMain_btnLogin { padding: 5px;}
+input#ctl00_ctl00_ContentPlaceHolderPageFrame_ContentPlaceHolderMain_btnLogin:hover { cursor: pointer;}
+
+.searchBar .search input[type="text"] { top: 1px; }
+.searchBar .filters li input[type="checkbox"] { margin-top: -5px;}
+.searchBar .filters li label { line-height: 36px;}
+
+.searchBar.resize .filters li label { line-height: 22px;}
+.searchBar.resize .search input[type="text"] { height: 40px; line-height: 40px;}
+.searchBar.resize .filters li input[type="checkbox"] { margin-top: -3px;}
+.searchBar.resize .filters li { margin-top: 0; height: 20px;}
+.searchBar.resize .search input[type="text"] {margin-right:1px;}
+/*========================================
+	Service Providers List
+==========================================*/
+.content.search.serviceProviders .promoList.filterSelection .button .buttonContent { display: inline-block; float: left;}
+
+.videoBox .fileUpload #fileUploadBtn { margin-top: 15px;}
+.videoBox .terms { padding-top: 8px; padding-bottom: 8px;}
+.widePanel.videoBox .fileUpload ul li div.ajaxLoaderContainer2 img { margin-top: 18px; margin-left: 10px;}
+.widePanel.videoBox { min-height: 332px;}

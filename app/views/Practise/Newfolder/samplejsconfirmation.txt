@@ -1,0 +1,143 @@
+function resourcesConfirm(){
+	alert("iam called 1");
+  //alert(selectedUnits);
+  if(selectedUnits.length <= 0){
+	  alert("Please Select the options");
+  }
+ 
+ $('input[name="list[]"]').val(selectedUnits);
+ alert(selectedUnits.length);
+ var chks=document.getElementsByName('resource[]');
+   
+   
+	var hasChecked=false;
+	for(var i=0;i<chks.length;i++)
+	{
+
+		if(chks[i].checked){
+        hasChecked=true;
+        
+        $('.modalContainer').append('<div class="container">'+
+				'<div class="row clearfix">'+
+				'<div class="col-md-12 column">'+
+
+					
+					'<div class="modal fade" id="modal-container-659890" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">'+
+						'<div class="modal-dialog">'+
+							'<div class="modal-content">'+
+								'<div class="modal-header">'+
+									 '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>'+
+									'<h4 class="modal-title" id="myModalLabel">'+
+										'Confirmation'+
+									'</h4>'+
+								'</div>'+
+								'<div class="modal-body">'+
+								'<h2 class="mdl2">'+
+								     'you chose the following'+
+									 '</h2>'+
+								'<font class="mdl">'+
+								     'Hosts'+
+									 '</font>'+
+									'<div id="hosts">'+
+									
+									'</div>'+
+									'<font class="mdl">'+
+								     'Filers'+
+									 '</font>'+
+									'<div id="filers">'+
+									
+								'	</div>'+
+								'</div>'+
+								'<div class="modal-footer">'+
+									 '<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>'+
+ '<input type="submit" value="Reserve" class="btn btn-primary">'+
+										'</div>'+
+							'</div>'+
+							
+						'</div>'+  
+						
+					'</div>'+
+					
+				'</div>'+
+			'</div>'+
+		'</div>');
+        
+        break;
+		}
+	}
+	if(hasChecked==false)
+	{
+		alert("done");
+		$('.modalContainer').empty();
+		//alert("Please Select the options");
+		return;
+	} 
+	 
+	var values = new Array();
+	$.each($("input[name='resource[]']:checked"), function() {
+	  values.push($(this).val());
+	  // or you can do something to the actual checked checkboxes by working directly with  'this'
+	  // something like $(this).hide() (only something useful, probably) :P
+	});
+    
+	var selectedResources=JSON.stringify(selectedUnits);
+	//alert(selectedResources);
+    //alert(selectedResources);
+	$.ajax({ 
+		type: "GET", 
+		url: "/nlab/user/resourcesConfirmation", 
+		data :{'jsondata':selectedResources},
+		dataType: "JSON",
+		success: function(data){
+			document.getElementById('hosts').innerHTML="";
+			document.getElementById('filers').innerHTML="";
+			var hostsInfo="";
+			var filersInfo="";
+			$.each(data,function(i,resources){
+				//console.log(resources);
+				
+				$.each(resources,function(i,resource){
+					if(resource.type=="host"){
+						hostsInfo=hostsInfo+" * "+resource.ip+"<br/>";
+
+						
+					}
+					else if(resource.type){
+						filersInfo=filersInfo+" * "+resource.ip+"<br/>";
+					
+					}
+					 
+					});
+
+				});
+			
+			 if(hostsInfo!=""){
+			 document.getElementById('hosts').innerHTML=hostsInfo;
+			 }
+			 else{
+				 document.getElementById('hosts').innerHTML="Hosts not chosen";
+			 }
+			 if(filersInfo!=""){
+ 			 document.getElementById('filers').innerHTML=filersInfo;
+			 }
+			 else{
+			document.getElementById('filers').innerHTML="Filers not chosen";
+			 }
+			//console.log('Success!');
+			//console.log(data);
+	      }
+	   
+	   
+		}) ;
+
+<?php 
+echo Session::get('key');
+?>
+
+	
+
+
+	
+}
+
+</script>

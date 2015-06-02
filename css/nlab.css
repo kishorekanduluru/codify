@@ -1,0 +1,261 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	margin: 0 auto;
+	padding: 0;
+}
+
+#header {
+	background-color: #0067c5;
+	padding-top: 1px;
+	padding-bottom: 20px;
+}
+
+#header_content {
+	width: 75%;
+	margin: 0 auto;
+	width: 75%;
+}
+
+#netapp_logo {
+	float: left;
+	margin-top:15px;
+}
+
+#site_Header {
+	color: rgb(255, 255, 255);
+	margin-left: 80px
+}
+
+#header_line1{
+	display:flex;
+}
+
+#welcomeNote{
+	margin-left:auto;
+}
+
+#footer {
+	background-color: #0067C5;
+	color: rgb(255, 255, 255);
+	clear: both;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 45px;
+	clear: both;
+}
+
+#tabs {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#testbedSelection {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: block;
+	align-items: center;
+	justify-content: center;
+}
+
+#testbedsMenu {
+	z-index: 999;
+	display: flex;
+	padding: 5px;
+	margin: auto 30%;
+	text-align: center;
+}
+
+#testbedsMenu label {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#tbdetails {
+	/*visibility: hidden;*/
+	
+}
+
+#testbedsMenu ul {
+	padding: 1;
+	margin: 1;
+	list-style: none;
+}
+
+#testbedsMenu li {
+	float: left;
+	position: relative;
+	padding-right: 100;
+	display: block;
+	border: 4px solid #CC55FF;
+	border-style: inset;
+}
+
+#testbedsMenu li ul {
+	display: none;
+	position: absolute;
+}
+
+#testbedsMenu li:hover ul {
+	display: block;
+	background: red;
+	height: auto;
+	width: 8em;
+	z-index: 999;
+}
+
+#testbedsMenu li ul li {
+	clear: both;
+	border-style: none;
+}
+
+#nate_tb_banner {
+	width: 45%;
+	display: flex;
+}
+
+#nate_tb_banner>p {
+	margin-left: 4%;
+	margin-top: 6%;
+}
+
+#hostInfo #filerInfo #switchInfo {
+	margin: auto;
+}
+
+#loginWrapper {
+	margin: 40px auto;
+	background-image: url(../img/layout/login-box.jpg);
+	background-position: top left;
+	background-repeat: no-repeat;
+	width: 385px;
+	min-height: 387px;
+	padding: 68px 60px 68px 70px;
+}
+
+#loginLogo {
+	float: left;
+	width: 62px;
+	padding-right: 30px;
+}
+
+#loginBoxWrapper {
+	float: left;
+	width: 288px;
+	color: rgb(69, 69, 69);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+#loginBoxWrapper h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17pt;
+	margin: 0;
+	padding: 26px 0 6px;
+	font-weight: normal;
+	color: rgb(69, 69, 69);
+}
+
+#form-login {
+	padding: 20px 0 0 0;
+	width: 288px;
+}
+
+#form-login label {
+	display: block;
+	text-align: left;
+	width: 70px;
+	float: left;
+	color: #454545;
+	padding: 2px 0 0;
+}
+
+#form-login input {
+	float: left;
+	font-size: 12px;
+	color: #454545;
+	padding: 2px 2px;
+	border: solid 1px #e6e6e6;
+	width: 180px;
+	margin: 0 0 15px 10px;
+}
+
+#form-login a {
+	outline: none;
+}
+
+#form-login a.btn-login,#form-login a.btn-login:active,#form-login a.btn-login:visited,#form-login input.btn-login
+	{
+	display: block;
+	width: 73px;
+	height: 22px;
+	background-image: url(../img/layout/btn-accept-login.png);
+	background-position: top;
+	text-indent: -9999px;
+	padding: 0px;
+	float: none;
+	border: none;
+	margin: 0px;
+}
+
+#form-login a.btn-login:hover,#form-login input.btn-login:hover {
+	background-position: bottom;
+}
+
+#loginfailed {
+	color: red;
+	visibility: hidden;
+}
+
+#navigationButtons{
+	display:flex;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.backfwdbuttons{
+	box-shadow: 0px 1px 0px 0px #bbdaf7;
+	background-color:#0066c5;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	border-bottom-left-radius:20px;
+	text-indent:0;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:65px;
+	line-height:65px;
+	width:131px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #528ecc;
+}.backfwdbuttons:hover {
+	background-color:#0066c5;
+}.backfwdbuttons:active {
+	position:relative;
+	top:1px;
+
+}
+
+#backButton{
+	
+}
+
+#fwdButton{
+	margin-left:auto;
+}

@@ -1,0 +1,106 @@
+/*********************************************
+    MEDIA QUERIES    
+*********************************************/
+
+/* SMALL SCREENS */
+
+@media only screen {
+}
+
+
+
+/* max-width 40em, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 640px) {
+    /*body { border: 1px solid red;}*/
+    
+    /* overlay: mobile device detected */
+    .overlay.deviceDetectMobile .overlayBinder {
+        font-size: 1.5em;
+    }
+}
+
+
+
+
+/* MEDIUM SCREENS */
+
+/* min-width 40.063em, medium screens */
+@media only screen and (min-width: 641px) {
+    /*body { border: 1px solid orange;}*/
+}
+
+
+
+/* min-width 40.063em and max-width 64em, use when QAing tablet-only issues */
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+    /*body { border: 1px solid yellow;}*/
+}
+
+
+
+
+/* LARGE SCREENS */
+
+/* min-width 64.063em, large screens */
+@media only screen and (min-width: 1025px) {
+    /*body { border: 1px solid green;}*/
+}
+
+
+
+/* min-width 64.063em and max-width 90em, use when QAing large screen-only issues */ 
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    /*body { border: 1px solid blue;}*/
+}
+
+
+
+
+/* XLARGE SCREENS */
+
+/* min-width 90.063em, xlarge screens */ 
+@media only screen and (min-width: 1441px) {
+    /*body { border: 1px solid indigo;}*/
+}
+
+
+
+/* min-width 90.063em and max-width 120em, use when QAing xlarge screen-only issues */
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+    /*body { border: 1px solid violet;}*/
+}
+
+
+
+
+/* XXLARGE SCREENS */
+/* min-width 120.063em, xlarge screens */
+@media only screen and (min-width: 1921px) {
+    /*body { border: 1px solid black;}*/
+}
+
+
+
+
+/* ORIENTATION - PORTRAIT */
+@media only screen and (orientation : portrait) {
+    /*body { border: 1px solid green;}*/
+    
+    /* overlay: mobile device detected */
+    .overlay.deviceDetectMobile .overlayBinder {
+        font-size: 2.2em;
+    }
+}
+
+
+
+
+/* ORIENTATION - LANDSCAPE */
+@media only screen and (orientation : landscape) {
+    /*body { border: 1px solid pink;}*/
+    
+    /* overlay: mobile device detected */
+    .overlay.deviceDetectMobile .overlayBinder {
+        font-size: 1.5em;
+    }
+}

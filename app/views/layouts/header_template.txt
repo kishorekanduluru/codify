@@ -1,0 +1,48 @@
+<div id="DIV_4">
+	<div id="DIV_5">
+		<div id="DIV_6">
+		<a href="http://www.netapp.com/in/">
+			<img src="/nlab/images/NetApp_logo.png"
+				width="69px" height="119px" /></a>
+		
+		<font size="7px"  color="white" style="padding-left: 250px;margin-top: 10px;top: 20px;">nLAB</font>
+		
+		
+		</div>
+		
+		
+
+		<div id="DIV_62">
+			
+			
+				<div id="DIV_64">
+						<font size="3">Hi, {{Auth::user()->username}}</font>
+					</div>
+					
+				
+				
+				<div id="DIV_63">
+				<div id="DIV_65">
+					<span id="SPAN_66"> <a id="A_67" href="/nlab/logout"
+						action="logout"><font size="2">Logout</font></a></span>
+				</div>
+				
+				
+			</div>
+			
+			
+		</div>
+		<div id="DIV_70"></div>
+		<div id="DIV_71">
+			<div id="DIV_72">
+				<div id="DIV_73"></div>
+				<div id="DIV_74"></div>
+				<div id="DIV_75"></div>
+			</div>
+
+
+		</div>
+	</div>
+
+	<div id="DIV_133"></div>
+</div>
