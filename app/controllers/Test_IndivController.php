@@ -78,7 +78,7 @@ class Test_IndivController extends BaseController {
 			// $TB_hostsList= DB::table('testbed_properties')->where('testbed_id',Session::get('testbedId'))->where('resource_type','host')->select('resource_id')->get();
 			// $TB_hostsList_Arr = json_decode(json_encode($TB_hostsList), true);
 			// var_dump($TB_hostsList_Arr);
-			
+			echo "iam in";
 			$hostInfo = unserialize ( Session::get ( 'hostsInfo' ) );
 			Session::put ( 'hosts', $hostInfo );
 			return \View::make ( 'user.Test.DOT.Individual.hostOptions' )->with ( 'os', $os )->with ( 'os_versions', $os_versions );
